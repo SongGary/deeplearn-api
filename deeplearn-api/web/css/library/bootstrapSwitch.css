@@ -1,0 +1,232 @@
+/* ============================================================
+ * bootstrapSwitch v1.2 by Larentis Mattia @spiritualGuru
+ * http://www.larentis.eu/switch/
+ * ============================================================
+ * Licensed under the Apache License, Version 2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * ============================================================ */
+.has-switch {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  border: 1px solid #eee;
+  line-height: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  min-width: 90px;
+  margin-right: 15px;
+}
+.has-switch.switch-mini {
+  min-width: 70px;
+}
+.has-switch.switch-small {
+  min-width: 80px;
+}
+.has-switch.switch-large {
+  min-width: 100px;
+}
+.has-switch.deactivate {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default !important;
+}
+.has-switch.deactivate label,
+.has-switch.deactivate span {
+  cursor: default !important;
+}
+.has-switch > div {
+  display: inline-block;
+  width: 150%;
+  position: relative;
+  top: 0;
+}
+.has-switch > div.switch-animate {
+  -webkit-transition: left 0.5s;
+  -moz-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  transition: left 0.5s;
+}
+.has-switch > div.switch-off {
+  left: -50%;
+}
+.has-switch > div.switch-on {
+  left: 0%;
+}
+.has-switch input[type=checkbox] {
+  display: none;
+}
+.has-switch span,
+.has-switch label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  padding-bottom: 4px;
+  padding-top: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.has-switch span.switch-mini,
+.has-switch label.switch-mini {
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-size: 10px;
+  line-height: 12px;
+}
+.has-switch span.switch-small,
+.has-switch label.switch-small {
+  padding-bottom: 3px;
+  padding-top: 4px;
+  font-size: 12px;
+  line-height: 15px;
+}
+.has-switch span.switch-large,
+.has-switch label.switch-large {
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: normal;
+}
+.has-switch label {
+  text-align: center;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  z-index: 100;
+  width: 34%;
+  color: #ffffff;
+  background: #fff;
+}
+.has-switch label i {
+  color: #000;
+  line-height: 18px;
+  pointer-events: none;
+}
+.has-switch span {
+  text-align: center;
+  z-index: 1;
+  width: 33%;
+}
+.has-switch span.switch-right {
+  color: #333333;
+  background: #eaeaea;
+  border-left: 1px solid #eee;
+}
+.has-switch span.switch-right:hover,
+.has-switch span.switch-right:focus,
+.has-switch span.switch-right:active,
+.has-switch span.switch-right.active,
+.has-switch span.switch-right.disabled,
+.has-switch span.switch-right[disabled] {
+  color: #333333;
+  background-color: #eaeaea;
+}
+.has-switch span.switch-right:active,
+.has-switch span.switch-right.active {
+  background-color: #e6e6e6 \9;
+}
+.has-switch span.switch-primary,
+.has-switch span.switch-left {
+  color: #ffffff;
+  background: #0072c6;
+  border-right: 1px solid #eee;
+}
+.has-switch span.switch-primary:hover,
+.has-switch span.switch-left:hover,
+.has-switch span.switch-primary:focus,
+.has-switch span.switch-left:focus,
+.has-switch span.switch-primary:active,
+.has-switch span.switch-left:active,
+.has-switch span.switch-primary.active,
+.has-switch span.switch-left.active,
+.has-switch span.switch-primary.disabled,
+.has-switch span.switch-left.disabled,
+.has-switch span.switch-primary[disabled],
+.has-switch span.switch-left[disabled] {
+  color: #ffffff;
+  background-color: #0072c6;
+}
+.has-switch span.switch-primary:active,
+.has-switch span.switch-left:active,
+.has-switch span.switch-primary.active,
+.has-switch span.switch-left.active {
+  background-color: #006699 \9;
+}
+.has-switch span.switch-info {
+  color: #ffffff;
+  background: #5db2ff;
+}
+.has-switch span.switch-info:hover,
+.has-switch span.switch-info:focus,
+.has-switch span.switch-info:active,
+.has-switch span.switch-info.active,
+.has-switch span.switch-info.disabled,
+.has-switch span.switch-info[disabled] {
+  color: #ffffff;
+  background: #5db2ff;
+}
+.has-switch span.switch-info:active,
+.has-switch span.switch-info.active {
+  background: #5db2ff;
+}
+.has-switch span.switch-success {
+  color: #ffffff;
+  background: #82ba00;
+}
+.has-switch span.switch-success:hover,
+.has-switch span.switch-success:focus,
+.has-switch span.switch-success:active,
+.has-switch span.switch-success.active,
+.has-switch span.switch-success.disabled,
+.has-switch span.switch-success[disabled] {
+  color: #ffffff;
+  background: #82ba00;
+}
+.has-switch span.switch-success:active,
+.has-switch span.switch-success.active {
+  background: #82ba00;
+}
+.has-switch span.switch-warning {
+  color: #ffffff;
+  background: #ff8f32;
+}
+.has-switch span.switch-warning:hover,
+.has-switch span.switch-warning:focus,
+.has-switch span.switch-warning:active,
+.has-switch span.switch-warning.active,
+.has-switch span.switch-warning.disabled,
+.has-switch span.switch-warning[disabled] {
+  color: #ffffff;
+  background: #ff8f32;
+}
+.has-switch span.switch-warning:active,
+.has-switch span.switch-warning.active {
+  background: #ff8f32;
+}
+.has-switch span.switch-danger {
+  color: #ffffff;
+  background: #ac193d;
+}
+.has-switch span.switch-danger:hover,
+.has-switch span.switch-danger:focus,
+.has-switch span.switch-danger:active,
+.has-switch span.switch-danger.active,
+.has-switch span.switch-danger.disabled,
+.has-switch span.switch-danger[disabled] {
+  color: #ffffff;
+  background: #ac193d;
+}
+.has-switch span.switch-danger:active,
+.has-switch span.switch-danger.active {
+  background: #ac193d;
+}

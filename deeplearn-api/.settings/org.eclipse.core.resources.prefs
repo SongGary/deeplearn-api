@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//common/tool_util.py=utf-8
+encoding//semanticsim/chinese_word2vec.py=utf-8
+encoding//textclassification/data_helpers.py=utf8
+encoding//textclassification/sample.py=utf-8
+encoding//textsum/process.py=utf-8
+encoding/classificationtest.py=utf-8
+encoding/database.py=utf-8
+encoding/textsimtest.py=utf-8
+encoding/textsumtest.py=utf-8
+encoding/webserver_dl.py=utf-8

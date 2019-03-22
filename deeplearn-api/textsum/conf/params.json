@@ -1,0 +1,1 @@
+{"num_softmax_samples": 4883, "epoch": 1000, "size": 128, "num_gpus": 2, "vocab_size": 14651, "batch_size": 6, "num_layers": 2, "exists": false, "buckets": [[30, 20]], "do_decoder": false}
